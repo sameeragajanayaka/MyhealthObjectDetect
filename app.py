@@ -39,7 +39,7 @@ def get():
     # image = Image.open(BytesIO(image_data))
     # cap = np.array(image)
     cap = cv2.imread("images/testimage.jpg")
-    model = YOLO("180pm.pt")
+    model = YOLO("250pn.pt")
 
     results = model(cap)
     result = results[0]
